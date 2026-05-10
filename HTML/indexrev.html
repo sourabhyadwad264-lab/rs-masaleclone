@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM Clone</title>
+
+  <link rel="stylesheet" href="../CSS/styleRev.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+
+    <div class="top-bar">
+      <p>Free Delivery on Orders Above ₹499</p>
+    </div>
+
+    <nav class="navbar">
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../Images/Mirchi.jpg" alt="RS Masale Logo">
+        <h1><span class="brand-main">RAJSHRI</span> MASALE</h1>
+      </div>
+
+      <!-- Hamburger -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <!-- Nav Links -->
+      <div class="nav-menu">
+
+        <div class="cart">
+          🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+
+        <!-- Products Dropdown -->
+        <div class="nav-item dropdown">
+          <button class="nav-link">Products</button>
+          <div class="dropdown-menu">
+            <a href="#whole">Whole Spices</a>
+            <a href="#ground">Ground Spices</a>
+            <a href="#blended">Blended Masalas</a>
+            <a href="#combo">Combo Packs</a>
+          </div>
+        </div>
+
+
+
+        <!-- Recipes Dropdown -->
+        <div class="nav-item dropdown">
+          <button class="nav-link">Recipes</button>
+          <div class="dropdown-menu">
+            <a href="#recipes">Veg Recipes</a>
+            <a href="#recipes">Non-Veg Recipes</a>
+          </div>
+        </div>
+
+        <a href="#bulk">Bulk Orders</a>
+        <a href="#contact">Contact</a>
+
+        <!-- Search -->
+        <div class="search-box">
+          <input type="text" placeholder="Search spices...">
+          <button>🔍</button>
+        </div>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>RS <span class="green-text">MASALE</span></h1>
+      <h2>Experience the True Taste of Indian Spices</h2>
+      <p>Handpicked ingredients. Rich aroma. Authentic flavors.</p>
+
+      <div class="hero-buttons">
+        <a href="#products">
+          <button class="btn-primary">Shop Now</button>
+        </a>
+        <a href="#about">
+          <button class="btn-secondary">Explore</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="about-container">
+
+      <div class="about-image">
+        <img src="../Images/222.png" alt="Spices">
+      </div>
+
+      <div class="about-content">
+        <h2>About <span>Rajshri Masale</span></h2>
+
+        <p>
+          Rajshri Masale brings the authentic taste of Indian spices directly to your kitchen.
+          Every product is handpicked, hygienically processed, and packed to preserve freshness.
+        </p>
+
+        <p>
+          From whole spices to blended masalas, we deliver quality, aroma, and tradition in every pinch.
+        </p>
+
+        <div class="about-highlights">
+          <div>✔ 100% Natural Ingredients</div>
+          <div>✔ Hygienically Processed</div>
+          <div>✔ Rich Aroma & Taste</div>
+          <div>✔ Trusted by Thousands</div>
+        </div>
+
+        <a href="#products">
+          <button class="btn-primary">Explore Products</button>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PRODUCTS ================= -->
+  <section id="products">
+
+    <div class="bottom-heading">
+      <b>Best Products</b>
+      <p>Handpicked ingredients. Rich aroma, Authentic flavors.</p>
+    </div>
+
+    <!-- Adding Products categories -->
+
+    <!-- ================= PRODUCT CATEGORIES ================= -->
+
+    <section id="whole" class="category">
+      <h2>Whole Spices</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="../Images/Cloves1.jpg">
+          <h3>Cloves</h3>
+          <p>₹220</p>
+          <button onclick="addToCart('Cloves',220)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../Images/cardamom.jpg">
+          <h3>Cardamom</h3>
+          <p>₹350</p>
+          <button onclick="addToCart('Cardamom',350)">Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="ground" class="category">
+      <h2>Ground Spices</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="../Images/turmericpowder.jpg">
+          <h3>Turmeric Powder</h3>
+          <p>₹120</p>
+          <button onclick="addToCart('Turmeric Powder',120)">Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="blended" class="category">
+      <h2>Blended Masalas</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="../Images/Blended Masalas1.jpg">
+          <h3>Garam Masala</h3>
+          <p>₹200</p>
+          <button onclick="addToCart('Garam Masala',200)">Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="combo" class="category">
+      <h2>Combo Packs</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="../Images/111.jpg">
+          <h3>Kitchen Combo Pack</h3>
+          <p>₹499</p>
+          <button onclick="addToCart('Kitchen Combo Pack',499)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========recipe-card=============== -->
+    <!-- ================= RECIPES ================= -->
+    <section id="recipes" class="recipes">
+
+      <h2>Our Recipes</h2>
+      <p>Cook delicious meals with our authentic spices</p>
+      <!-- Recipe Filter -->
+      <div class="recipe-filters">
+        <button onclick="filterRecipes('all')">All</button>
+        <button onclick="filterRecipes('veg')">Veg</button>
+        <button onclick="filterRecipes('nonveg')">Non-Veg</button>
+      </div>
+      <div class="recipe-grid">
+        <div class="recipe-card" data-type="veg">
+          <img src="../Images/paneer.jpg">
+          <h3>Paneer Butter Masala</h3>
+          <p>Rich & creamy North Indian dish</p>
+          <!-- <button onclick="alert('Recipe details coming soon!')">View Recipe</button> -->
+          <button onclick="openRecipe('paneer')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" data-type="nonveg">
+          <img src="../Images/biryani.jpg">
+          <h3>Chicken Biryani</h3>
+          <p>Flavorful rice with spices</p>
+          <!-- <button onclick="alert('Recipe details coming soon!')">View Recipe</button> -->
+          <button onclick="openRecipe('biryani')">View Recipe</button>
+        </div>
+
+        <div class="recipe-card" data-type="veg">
+          <img src="../Images/dal.jpg">
+          <h3>Dal Tadka</h3>
+          <p>Simple & healthy everyday meal</p>
+          <!-- <button onclick="alert('Recipe details coming soon!')">View Recipe</button> -->
+          <button onclick="openRecipe('dal')">View Recipe</button>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!--================ BULK ORDER =============== -->
+    <section id="bulk" class="bulk">
+
+      <h2>Bulk Orders</h2>
+      <p>Order spices in large quantities for your business needs.</p>
+
+      <div class="bulk-container">
+
+        <!-- LEFT INFO -->
+        <div class="bulk-info">
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>✔ Special Wholesale Pricing</li>
+            <li>✔ High Quality & Fresh Spices</li>
+            <li>✔ Custom Packaging Available</li>
+            <li>✔ Fast & Reliable Delivery</li>
+          </ul>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="bulk-form">
+          <form>
+
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Business Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+
+            <input type="text" placeholder="Product Required">
+            <input type="number" placeholder="Quantity (kg)">
+
+            <textarea placeholder="Additional Requirements" rows="4"></textarea>
+
+            <button type="submit" class="btn-primary">Request Quote</button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =================CONTACT=================== -->
+    <section id="contact" class="contact">
+
+      <h2>Contact Us</h2>
+
+      <div class="contact-container">
+
+        <!-- LEFT INFO -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>We would love to hear from you!</p>
+
+          <p><b>📍 Address:</b> Pune, India</p>
+          <p><b>📞 Phone:</b> +91 9876543210</p>
+          <p><b>📧 Email:</b> rsmasale@gmail.com</p>
+          <p><b>🕒 Hours:</b> Mon - Sat (9AM - 8PM)</p>
+        </div>
+        <div class="map-container">
+
+          <button onclick="loadMap()" class="btn-primary">
+            📍 View Location
+          </button>
+
+          <div id="map-frame"></div>
+
+        </div>
+        <!-- RIGHT FORM -->
+        <div class="contact-form">
+          <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error" id="nameError"></small>
+
+            <input type="email" id="email" placeholder="Your Email">
+            <small class="error" id="emailError"></small>
+
+            <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+            <small class="error" id="messageError"></small>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+
+            <!-- Success Message -->
+            <p id="successMsg" class="success"></p>
+
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('new',this)">New Products</button>
+      <button class="tab" onclick="showTab('featured',this)">Featured Products</button>
+      <button class="tab" onclick="showTab('best',this)">Best Seller Product</button>
+    </div>
+
+    <!-- NEW -->
+    <div id="new" class="tab-content active">
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="../Images/turmericpowder.jpg">
+          <h3>Turmeric Powder</h3>
+          <p>₹120</p>
+          <button onclick="addToCart('Turmeric Powder',120)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../Images/RedChilli Powder.jpg">
+          <h3>Red Chilli Powder</h3>
+          <p>₹150</p>
+          <button onclick="addToCart('Red Chilli Powder',150)">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FEATURED -->
+    <div id="featured" class="tab-content">
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="../Images/Masalas03by03.jpg">
+          <h3>Garam Masala</h3>
+          <p>₹200</p>
+          <button onclick="addToCart('Garam Masala',200)">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BEST -->
+    <div id="best" class="tab-content">
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="../Images/BiryaniMasalasBM.jpg">
+          <h3>Biryani Masala</h3>
+          <p>₹180</p>
+          <button onclick="addToCart('Biryani Masala',180)">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+    <div class="items">
+      <img src="../Images/travelling.png" width="50">
+      <p>Free Worldwide Shipping</p>
+      <p>On orders above $150</p>
+    </div>
+
+    <div class="items">
+      <img src="../Images/wallet.png" width="50">
+      <p>Money Back Guarantee</p>
+      <p>Cash on Delivery</p>
+    </div>
+
+    <div class="items">
+      <img src="../Images/gift-card.png" width="50">
+      <p>Special Gift Cards</p>
+      <p>Bonus Offers Available</p>
+    </div>
+
+    <div class="items">
+      <img src="../Images/microphone.png" width="50">
+      <p>24/7 Support</p>
+      <p>Call: 123-456-789</p>
+    </div>
+
+  </footer>
+
+  <script src="../JavaScript/RevRM.js"></script>
+
+  <div id="recipeModal" class="modal">
+    <div class="modal-content">
+
+      <span class="close" onclick="closeRecipe()">&times;</span>
+
+      <h2 id="recipeTitle"></h2>
+
+      <!-- INGREDIENTS -->
+      <h3>Ingredients</h3>
+      <ul id="recipeIngredients"></ul>
+
+      <!-- 🔥 CONNECT PRODUCTS (CORRECT PLACE) -->
+      <h3>Buy Ingredients</h3>
+      <div id="recipeProducts"></div>
+      <h3>Total: ₹<span id="recipeTotal">0</span></h3>
+
+      <button class="btn-primary" onclick="addAllToCart()">
+        Add All Ingredients
+      </button>
+      <!-- STEPS -->
+      <h3>Steps</h3>
+      <ol id="recipeSteps"></ol>
+
+    </div>
+  </div>
+  <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
