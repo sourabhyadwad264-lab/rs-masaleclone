@@ -45,5 +45,8 @@ RS-Masale/
 ## GitHub Repository
 <!-- Add your GitHub repository link here. -->
 
+# Deployment tool
+- Netlify and Vercel
+
 ## Author
 Sourabh  Yadwad 

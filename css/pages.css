@@ -1,0 +1,53 @@
+.about-page{
+  align-items:center;
+}
+
+.about-image img{
+  width:100%;
+  border-radius:20px;
+}
+
+.about-content h1{
+  font-size:3rem;
+  color:#c62828;
+  margin-bottom:20px;
+}
+
+.contact{
+  padding:100px 8%;
+}
+
+.contact-container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.contact-info,
+.contact-form{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-form form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:16px;
+  border:1px solid #ddd;
+  border-radius:12px;
+}
+
+.contact-form button{
+  padding:16px;
+  border:none;
+  border-radius:50px;
+  background:#ff6f00;
+  color:white;
+}

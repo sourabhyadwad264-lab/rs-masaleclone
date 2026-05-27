@@ -1,0 +1,23 @@
+@media(max-width:992px){
+
+  .hero h1{
+    font-size:3rem;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .hero{
+    padding:0 5%;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+}
